@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const StyledLink = styled.a`
 	color: ${props => props.active ? 'pink' : '#fff'};
 	font-size: 14px;
-	font-weightL 300;
+	font-weight 300;
 	line-height: 24px;
 	padding-right: 33px;
 	border-right: 1px dotted #fff;
