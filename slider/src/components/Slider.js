@@ -21,14 +21,21 @@ class Slider extends React.Component{
 			active: 0,
 			max: 0
 		}
+
+
+
+
+
+
+
 		this.state.max = this.state.slides.length;
 		this.intervalBetweenSlides = this.intervalBetweenSlides.bind(this);
 		this.toggleAutoplay = this.toggleAutoplay.bind(this);
 		this.nextOne = this.nextOne.bind(this);
-		this.prevtOne = this.prevtOne.bind(this);
+		this.prevOne = this.prevOne.bind(this);
 	}	
 	componentDidMount() {
-		this.interval = setInterval( ()=> this.interbalBetweenSlides(), 3000 )
+		this.interval = setInterval(()=> this.intervalBetweenSlides(), 3000 )
 	}
 	componentWillUnmount() {
 		clearInterval(this.interval)
