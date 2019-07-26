@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Row, Col } from 'reactstrap';
 import styled from 'styled-components';
+import Slider from './Slider';
 
 
 const Repair = styled.div`
@@ -54,6 +55,7 @@ class Main extends React.Component {
 					</Repair>
 				</Col>
 				<Col lg={6} lgOfsset={1}>
+					<Slider />
 				</Col>
 			</Row>
 		);
